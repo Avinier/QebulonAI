@@ -48,10 +48,43 @@ const getInstanceData = (slug) => {
 };
 
 export async function generateStaticParams() {
-  // This would come from your data source
   const instances = [
-    { title: "superserver.ai" },
-    // Add other instances...
+    {
+      title: "superserver.ai-1",
+      domain: "quantumsenses.com",
+      repoPath: "Avinier/SuperServerAI-LandingPage",
+      lastCommit: "wait",
+      timeAgo: "8d ago",
+      branch: "main",
+      icon: "/logo-1.jpeg",
+    },
+    {
+      title: "superserver.ai-2",
+      domain: "quantumsenses.com",
+      repoPath: "Avinier/SuperServerAI-LandingPage",
+      lastCommit: "wait",
+      timeAgo: "8d ago",
+      branch: "main",
+      icon: "/logo-1.jpeg",
+    },
+    {
+      title: "superserver.ai-3",
+      domain: "quantumsenses.com",
+      repoPath: "Avinier/SuperServerAI-LandingPage",
+      lastCommit: "wait",
+      timeAgo: "8d ago",
+      branch: "main",
+      icon: "/logo-1.jpeg",
+    },
+    {
+      title: "superserver.ai-4",
+      domain: "quantumsenses.com",
+      repoPath: "Avinier/SuperServerAI-LandingPage",
+      lastCommit: "wait",
+      timeAgo: "8d ago",
+      branch: "main",
+      icon: "/logo-1.jpeg",
+    },
   ];
 
   return instances.map((instance) => ({
@@ -74,8 +107,8 @@ export default function InstancePage({ params }) {
         <div className="space-y-6">
           {/* Instance Header */}
           <div className="flex items-center space-x-4">
-            <div className="w-12 h-12 rounded-full overflow-hidden bg-secondary/10">
-              {instance.icon && (
+            <div className="w-12 h-12 rounded-full overflow-hidden bg-grey/10">
+              {/* {instance.icon && (
                 <Image
                   src={instance.icon}
                   alt={instance.title}
@@ -83,13 +116,13 @@ export default function InstancePage({ params }) {
                   height={48}
                   className="w-full h-full object-cover"
                 />
-              )}
+              )} */}
             </div>
             <div>
               <h1 className="text-2xl font-medium text-primary">
                 {instance.title}
               </h1>
-              <p className="text-secondary">{instance.domain}</p>
+              <p className="text-grey">{instance.domain}</p>
             </div>
           </div>
 
@@ -97,7 +130,7 @@ export default function InstancePage({ params }) {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="p-6 border border-border rounded-lg">
               <h2 className="font-medium mb-4">Repository Details</h2>
-              <div className="space-y-2 text-secondary">
+              <div className="space-y-2 text-grey">
                 <p>Path: {instance.repoPath}</p>
                 <p>Last Commit: {instance.lastCommit}</p>
                 <p>Updated: {instance.timeAgo}</p>

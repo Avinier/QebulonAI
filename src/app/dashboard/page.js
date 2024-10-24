@@ -9,7 +9,7 @@ const DashboardPage = () => {
   // Sample data - replace with your actual data
   const instances = [
     {
-      title: "superserver.ai",
+      title: "superserver.ai-1",
       domain: "quantumsenses.com",
       repoPath: "Avinier/SuperServerAI-LandingPage",
       lastCommit: "wait",
@@ -18,7 +18,7 @@ const DashboardPage = () => {
       icon: "/logo-1.jpeg",
     },
     {
-      title: "superserver.ai",
+      title: "superserver.ai-2",
       domain: "quantumsenses.com",
       repoPath: "Avinier/SuperServerAI-LandingPage",
       lastCommit: "wait",
@@ -27,7 +27,7 @@ const DashboardPage = () => {
       icon: "/logo-1.jpeg",
     },
     {
-      title: "superserver.ai",
+      title: "superserver.ai-3",
       domain: "quantumsenses.com",
       repoPath: "Avinier/SuperServerAI-LandingPage",
       lastCommit: "wait",
@@ -36,7 +36,7 @@ const DashboardPage = () => {
       icon: "/logo-1.jpeg",
     },
     {
-      title: "superserver.ai",
+      title: "superserver.ai-4",
       domain: "quantumsenses.com",
       repoPath: "Avinier/SuperServerAI-LandingPage",
       lastCommit: "wait",
@@ -78,7 +78,7 @@ const DashboardPage = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {instances.map((instance, index) => (
-            <InstanceCard key={index} {...instance} />
+            <InstanceCard key={instance.slug || index} {...instance} />
           ))}
         </div>
       </main>

@@ -32,6 +32,7 @@ const InstancePage = () => {
       meet: {
         title: "Meeting title",
         link: "https://meet.google.com",
+        videoId: "1TucufRiGz65B7z_d8FS9TJNnM8W0HlYk",
         members: [
           { name: "mem1", image: "/logo-1.jpeg" },
           { name: "mem2", image: "/logo-1.jpeg" },
@@ -194,7 +195,15 @@ const InstancePage = () => {
                 <p className="text-sm text-gray-500 mb-1">Title</p>
                 <p className="font-medium">{instance.meet.title}</p>
               </div>
-
+              <div className="relative w-[500px] rounded-lg overflow-hidden bg-gray-100">
+                <div className="">
+                  <iframe
+                    src={`https://drive.google.com/file/d/${instance.meet.videoId}/preview`}
+                    allow="autoplay"
+                    className="absolute top-0 left-0 w-[100%] h-[100%] object-fill border-0"
+                  ></iframe>
+                </div>
+              </div>
               <div>
                 <p className="text-sm text-gray-500 mb-1">Meeting Link</p>
                 <a

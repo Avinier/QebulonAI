@@ -188,12 +188,12 @@ const InstancePage = () => {
                   <div
                     className="bg-green-500 h-2.5 rounded-full transition-all duration-300"
                     style={{
-                      width: `${(2 / 4) * 100}%`,
+                      width: `${(1 / 4) * 100}%`,
                     }}
                   />
                 </div>
                 <p className="text-xs text-gray-500 mt-1">
-                  {35}GB / {100}GB
+                  {1}GB / {4}GB
                 </p>
               </div>
               <div className="flex items-center gap-2">
@@ -216,12 +216,12 @@ const InstancePage = () => {
                   <div
                     className="bg-blue-500 h-2.5 rounded-full transition-all duration-300"
                     style={{
-                      width: `${(75 / 100) * 100}%`,
+                      width: `${(45 / 100) * 100}%`,
                     }}
                   />
                 </div>
                 <p className="text-xs text-gray-500 mt-1">
-                  {75}GB / {100}GB
+                  {45}GB / {100}GB
                 </p>
               </div>
             </div>

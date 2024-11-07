@@ -19,10 +19,10 @@ const InstancePage = () => {
   const instances = [
     {
       slug: "superserver-ai-1",
-      name: "My First Instance",
-      link: "https://github.com/Avinier",
+      name: "SuperServer.AI",
+      link: "https://github.com/Avinier/SuperServer-AI",
       url: "https://quantumsenses.com",
-      description: "This is a detailed description of the first instance.",
+      description: "Deploy your application with the help of our chatbots",
       status: "running",
       createdAt: "2024-03-15",
       specs: {
@@ -35,8 +35,8 @@ const InstancePage = () => {
       },
       meet: {
         title: "Meeting title",
-        link: "https://meet.google.com",
-        videoId: "1TucufRiGz65B7z_d8FS9TJNnM8W0HlYk",
+        link: "https://meet.google.com/bvw-jtsc-kod",
+        videoId: "1OSI5KdGhIDepr8a_peyJZIX6lKmOge8F",
         members: [
           { name: "mem1", image: "/logo-1.jpeg" },
           { name: "mem2", image: "/logo-1.jpeg" },
@@ -94,10 +94,10 @@ const InstancePage = () => {
   }
 
   const todos = [
-    { id: 1, text: "Write technical docs", completed: false },
+    { id: 1, text: "Add graphs in dashboard", completed: false },
     { id: 2, text: "Review pull requests", completed: false },
     { id: 3, text: "Update dependencies", completed: true },
-    { id: 4, text: "Deploy to production", completed: false },
+    { id: 4, text: "Database tuning", completed: false },
   ];
 
   const [tasks, setTasks] = useState(todos);
@@ -297,7 +297,8 @@ const InstancePage = () => {
             </div>
             <div className="flex items-center justify-between">
               <a
-                href="#_"
+                href="https://docs.google.com/document/d/1J4dlSIq2FuQN8McoFzAWKEL0NU29-T9mkKe4YtF-7W0/edit?usp=sharing"
+                target="_blank"
                 class="box-border relative z-30 h-[50px] mt-10 my-auto items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-orange-600 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-orange-300 ring-offset-orange-200 hover:ring-offset-orange-500 ease focus:outline-none"
               >
                 <span class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-10 group-hover:translate-x-0"></span>
@@ -327,7 +328,11 @@ const InstancePage = () => {
                   <h3 className="text-md font-bold font-primary text-center text-primary mr-[10px]">
                     Task Allotement
                   </h3>
-                  <a href="#" className="text-primary ">
+                  <a
+                    href="https://calendar.google.com/calendar/u/0/r/tasks?pli=1"
+                    className="text-primary "
+                    target="_blank"
+                  >
                     <ExternalLink size={20} />
                   </a>
                 </div>

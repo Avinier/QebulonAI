@@ -1,1 +1,1 @@
-# SuperServerAI for MumbaiHacks'24
+# SuperServerAI
